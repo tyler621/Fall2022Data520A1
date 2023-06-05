@@ -8,13 +8,24 @@ $interface = $query->url_param('interface');
 if ( $act eq "Display source" ) {
     if ( $password eq "tylerschoice" ) {
 	print( "Content-type: text/plain\n\n" );
+<<<<<<< HEAD
+=======
+	system("cat login.cgi;echo '\n\n\n\n\n';cat login.pl;echo '\n\n\n\n\n';cat login.java" );
+	system("cat bookstore.html;echo '\n\n\n\n\n';cat bookstore.php;echo '\n\n\n\n\n';cat show.html" );
+	system("cat show.php;echo '\n\n\n\n\n\';cat purchase.html; echo '\n\n\n\n\n';cat purchase.php");
+
+>>>>>>> 3149e9ad2320032dcd3b9f4beedc8ea328140d32
 	if ( $interface == 1 ) {
 	    system("cat login.cgi;echo '\n\n\n\n\n';cat login.pl;echo '\n\n\n\n\n';cat login.java" );
 	}
 	elsif ( $interface == 2 ) {
 	    system("cat enterlist.cgi;echo '\n\n\n\n\n';cat enterlist.pl;echo '\n\n\n\n\n';cat enterlist.java" );
 	}
+<<<<<<< HEAD
 	elseif ( $interface == 3) {
+=======
+	elsif ( $interface == 3) {
+>>>>>>> 3149e9ad2320032dcd3b9f4beedc8ea328140d32
 	    system("cat updatelist.cgi;echo '\n\n\n\n\n\';cat updatelist.pl; echo '\n\n\n\n\n';cat updatelist.java");
 	}
 	else {

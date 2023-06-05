@@ -4,6 +4,7 @@ use CGI;
 print( "Content-type: text/html\n\n" );
 $query = new CGI;
 $act   = $query->param( "act" );
+<<<<<<< HEAD
 $name  = $query->param( "name" ); 
 
 if ( $act eq "Register" ) {
@@ -15,6 +16,34 @@ elsif ( $act eq "Enter" ) {
 }
 elsif ( $act eq "Clear system" ) {
     system( "cat login.html" );
+=======
+$password  = $query->param('password');
+$name  = $query->param( "name" ); 
+
+
+if ( $act eq "Register" ) {
+    system( "cat register.html" );
+}
+elsif ( $act eq "Enter" ) {
+    if ( $password eq "tylerschoice" ) {
+	print ( "Content-type: text/html\n\n" );
+	system( "/bin/cat  select.html" );
+    }
+    else {
+        print ( " FAILURE " );
+    }
+}
+elsif ( $act eq "Clear system" ) {
+    system( "cat clear.html" );
+}
+elsif ( $act eq "Bookstore" ) {
+    print ( "Content-type: text/html\n\n" );
+    system( "/bin/cat bookstore.html" );
+}
+elsif ( $act eq "Show Bookstore" ) {
+    print ( "Content-type: text/html\n\n" );
+    system( "/bin/cat show.html" );
+>>>>>>> 3149e9ad2320032dcd3b9f4beedc8ea328140d32
 }
 elsif( $act eq "Help" ) {
     print ( "Content-type: text/html\n\n" );

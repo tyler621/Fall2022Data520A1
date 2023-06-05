@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3149e9ad2320032dcd3b9f4beedc8ea328140d32
 <html>
  <head>
   <meta content='noindex,nofollow' name='robots'>
@@ -12,8 +15,12 @@
    <td align='center' valign='middle'>
 
 <table width="80%" cellspacing="0" cellpadding="15" border="0" class="shadow">
+<<<<<<< HEAD
  <form method="post" action="http://undcemcs02.und.edu/~tyler.franzen/cgi-bin/A1520/updatelist.pl?name=
 Tyler">
+=======
+ <form method="post" action="http://undcemcs02.und.edu/~tyler.franzen/cgi-bin/A2520/updatelist.php">
+>>>>>>> 3149e9ad2320032dcd3b9f4beedc8ea328140d32
  <tr bgcolor="#black">
   <th align="left">
    <font face="Verdana, Arial, Helvetica" color="white" size="2"> &nbsp; 
@@ -26,6 +33,7 @@ Enter and Update Books Here</font>
    <font face="Verdana, Arial, Helvetica" size="2">
    <font size="0"><br /></font>
    &nbsp; Title: 
+<<<<<<< HEAD
    <input type="text" name="title" size="64" value="Web Database Applications with PHP and MySQL">
    <br /><font size="0"><br /></font>
    &nbsp; ISBN:
@@ -33,6 +41,15 @@ Enter and Update Books Here</font>
    <br /><font size="0"><br /></font> 
    &nbsp; Price:
    <input type="text" name="price" size="10" maxlength="10" value="39.99">
+=======
+   <input type="text" name="title" id="title" size="64" value="Web Database Applications with PHP and MySQL">
+   <br /><font size="0"><br /></font>
+   &nbsp; ISBN:
+   <input type="text" name="ISBN" id="ISBN" size="10" maxlength="10" value="0596005431"> 
+   <br /><font size="0"><br /></font> 
+   &nbsp; Price:
+   <input type="text" name="price" id="price" size="10" maxlength="10" value="39.99">
+>>>>>>> 3149e9ad2320032dcd3b9f4beedc8ea328140d32
    </font>
    <p align="center">
    <input type="submit" name="act" value="Enter">

@@ -8,6 +8,7 @@ $interface = $query->url_param('interface');
 if ( $act eq "Display source" ) {
     if ( $password eq "tylerschoice" ) {
 	print( "Content-type: text/plain\n\n" );
+<<<<<<< HEAD
 	if ( $interface == 1 ) {
 	    system("cat login.cgi;echo '\n\n\n\n\n';cat login.pl;echo '\n\n\n\n\n';cat login.java" );
 	}
@@ -20,6 +21,11 @@ if ( $act eq "Display source" ) {
 	else {
 	    print( "\n\n\n     No such interface: $interface" );
 	}
+=======
+	system("cat login.cgi;echo '\n\n\n\n\n';cat login.pl;echo '\n\n\n\n\n';cat login.java" );
+	system("cat bookstore.html;echo '\n\n\n\n\n';cat bookstore.php;echo '\n\n\n\n\n';cat show.html" );
+	system("cat show.php;echo '\n\n\n\n\n\';cat purchase.html; echo '\n\n\n\n\n';cat purchase.php");
+>>>>>>> 3149e9ad2320032dcd3b9f4beedc8ea328140d32
     }  
     else {
 	print( "Content-type: text/html\n\n" );
